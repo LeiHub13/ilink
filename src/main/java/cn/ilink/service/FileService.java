@@ -283,7 +283,7 @@ public class FileService {
             return ".7z";
         }
         if (Set.of(".txt", ".md", ".csv").contains(declaredExtension) && looksLikeText(file)) {
-            return ".text";
+            return declaredExtension;
         }
         return null;
     }
